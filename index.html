@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page By Sumith</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+<header id="main-header">
+    <h1>HTML Tables</h1>
+    <p>
+        The information displayed here is from
+        <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank">this</a
+      >
+      source.
+    </p>
+
+    <i class="fas fa-table fa-8x"></i>
+  </header>
+  <div class="container">
+    <nav id="navbar">
+      <header>HTML Tables</header>
+      <i class="fas fa-table fa-6x"></i>
+      <li>
+        <a class="nav-link" href="#HTML_Tables_Introduction"
+          >HTML Tables Introduction</a
+        >
+      </li>
+      <li>
+        <a class="nav-link" href="#Table_Cells">Table Cells</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Table_Rows">Table Rows</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Table_Headers">Table Headers</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Table_HTML_Tags">Table HTML Tags</a>
+        </li>
+        <h4>Made by Sumith</h4>
+        </nav>
+        <main id="main-doc">
+            <section id="HTML_Tables_Introduction" class="main-section">
+                <header>HTML Tables Introduction</header>
+                <p>
+                    A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for just this purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on the web such as your school lesson
+                    plan, the timetable at your local swimming pool, or statistics about your favorite dinosaurs or football team. This module takes you through all you need to know about structuring tabular data using HTML.
+                </p>
+                <p>
+                    HTML tables allow web developers to arrange data into rows and columns.A table in HTML consists of table cells inside rows and columns.
+                </p>
+                <pre>
+                <code>
+                &lt;table&gt;
+                &lt;tr&gt;
+                &lt;th&gt;Company &lt;/th&gt;
+                &lt;th&gt;Contact &lt;/th&gt;
+                &lt;th&gt;Country &lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;Alfreds Futterkiste &lt;/td&gt;
+                &lt;td&gt;Maria Anders &lt;/td&gt;
+                &lt;td&gt;Germany &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;Centro comercial Moctezuma &lt;/td&gt;
+                &lt;td&gt;Francisco Chang &lt;/td&gt;
+                &lt;td&gt;Mexico &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/table&gt;
+            </code>
+           
+            </pre>
+                <p>
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Contact</th>
+                            <th>Country</th>
+                        </tr>
+                        <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                        </tr>
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+                    </table>
+                </p>
+            </section>
+            <section id="Table_Cells" class="main-section">
+                <header>Table Cells</header>
+                <p>
+                    Each table cell is defined by a
+                    <code>&lt;td&gt;</code> and a <code>&lt;/td&gt;</code> tag. Everything between <code>&lt;td&gt;</code> and <code>&lt;/td&gt;</code> are the content of the table cell.
+                </p>
+                <p><strong>td</strong> stands for table data.</p>
+                <pre>
+                    <code>
+                        &lt;table&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Emil&lt;/td&gt;
+                        &lt;td&gt;Tobias&lt;/td&gt;
+                        &lt;td&gt;Linus&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                    </code>
+                </pre>
+                <p>
+                    <table>
+                        <tr>
+                            <td>Emil</td>
+                            <td>Tobias</td>
+                            <td>Linus</td>
+                        </tr>
+                    </table>
+                </p>
+            </section>
+            <section id="Table_Rows" class="main-section">
+                <header>Table Rows</header>
+                <p>
+                    Each table row starts with a <code>&lt;tr&gt;</code>and end with a
+                    <code>&lt;/tr&gt; </code> tag.You can have as many rows as you like in a table, just make sure that the number of cells are the same in each row.
+                </p>
+                <p><strong>tr </strong>stands for table row.</p>
+                <pre>
+                    <code>
+                        &lt;table&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Emil&lt;/td&gt;
+                        &lt;td&gt;Tobias&lt;/td&gt;
+                        &lt;td&gt;Linus&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;16&lt;/td&gt;
+                        &lt;td&gt;14&lt;/td&gt;
+                        &lt;td&gt;10&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                    </code>
+                </pre>
+                <p>
+                    <table>
+                        <tr>
+                            <td>Emil</td>
+                            <td>Tobias</td>
+                            <td>Linus</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                </p>
+                <p>
+                    There are times where a row can have less or more cells than another. You will learn about that in a later chapter.
+                </p>
+            </section>
+            <section id="Table_Headers" class="main-section">
+                <header>Table Headers</header>
+                <p>
+                    Sometimes you want your cells to be headers, in those cases use the
+                    <code>&lt;th&gt;</code> tag instead of the
+                    <code>&lt;td&gt;</code> tag.
+                </p>
+                <pre>
+                    <code>
+                        &lt;table&gt;
+                        &lt;tr&gt;
+                        &lt;th&gt;Person 1&lt;/th&gt;
+                        &lt;th&gt;Person 2&lt;/th&gt;
+                        &lt;th&gt;Person 3&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr>
+                        &lt;td&gt;Emil&lt;/td&gt;
+                        &lt;td&gt;Tobias&lt;/td&gt;
+                        &lt;td&gt;Linus&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;16&lt;/td&gt;
+                        &lt;td&gt;14&lt;/td&gt;
+                        &lt;td&gt;10&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                    </code>
+                </pre>
+                <p>
+                    <table>
+                        <tr>
+                            <th>Person 1</th>
+                            <th>Person 2</th>
+                            <th>Person 3</th>
+                        </tr>
+                        <tr>
+                            <td>Emil</td>
+                            <td>Tobias</td>
+                            <td>Linus</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                </p>
+                <p>
+                    By default, the text in
+                    <code>&lt;th&gt;</code> elements are bold and centered, but you can change that with CSS.
+                </p>
+            </section>
+            <section id="Table_HTML_Tags" class="main-section">
+                <header>Table HTML Tags</header>
+                <p>HTML tags that uses to create tables</p>
+                <ul>
+                    <li><code>&lt;table&gt;</code></li>
+                    <li><code>&lt;th&gt;</code></li>
+                    <li><code>&lt;tr&gt;</code></li>
+                    <li><code>&lt;td&gt;</code></li>
+                    <li><code>&lt;caption&gt;</code></li>
+                    <li><code>&lt;col&gt;</code></li>
+                    <li><code>&lt;thead&gt;</code></li>
+                    <li><code>&lt;tbody&gt;</code></li>
+                    <li><code>&lt;tfoot&gt;</code></li>
+                    <li><code>&lt;colgroup&gt;</code></li>
+                </ul>
+            </section>
+        </main>
+        </div>
+        <footer>
+
+        </footer>
+
+</html>
